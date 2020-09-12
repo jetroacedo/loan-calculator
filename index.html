@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/style.css">
+
+   <title>Loan Calculator</title>
+
+</head>
+<body>
+   <section>
+      <nav class="container2 mt-2">
+         <div class="p-4">
+            <ul class="nav justify-content-center">
+               <li class="nav-item">
+                 <a class="nav-link active" href="index.html">Car Loan</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="housing.html">Housing Loan</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="personal.html">Personal Loan</a>
+               </li>
+             </ul>
+         </div>
+      </nav>
+   </section>
+   <section class="mt-4">
+      <h5 class="text-center mb-1">Calculate Your Car Loan</h5>
+      <div class="container2">
+         <div class="row d-flex">
+            <div class="col col-6">
+               <form id="loan-form" class="form">
+   
+   
+                     <!-- PRINCIPAL AMOUNT -->
+                  <div class="d-flex justify-content-between align-items-baseline mb-4">
+                     <p class="number"> Selling Amount </p>
+                     <div class="d-flex input-group-sm">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-sizing-sm">&#8369;</span>
+                        </div>
+                        <input type="number" id="amount"class="form-control input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                      </div> 
+                  </div>
+   
+   
+   
+                     <!-- DOWNPAYMENT -->
+                  <div class="d-flex justify-content-between align-items-baseline mb-4">
+                     <p class="number"> Downpayment</p>
+                     <div class="d-flex input-group-sm">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-sizing-sm">&#8369;</span>
+                        </div>
+                        <input type="number" id="downpayment" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                  </div>
+   
+   
+   
+                     <!-- INTEREST -->               
+                  <div class="d-flex justify-content-between align-items-baseline mb-4">
+                     <p class="number"> Interest</p>
+                     <div class="d-flex input-group-sm">
+                        <input type="number" id="interest" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="inputGroup-sizing-sm">%</span>
+                        </div>
+                      </div>
+                  </div>
+   
+   
+   
+   
+                     <!-- YEAR -->               
+                  <div class="d-flex justify-content-between align-items-baseline mb-4">
+                     <p class="number"> Number of year</p>
+                     <div class="d-flex input-group-sm">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text" id="inputGroup-sizing-sm"><i class='fas'>&#xf073;</i></span>
+                        </div>
+                        <input type="number" id="years" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                  </div>
+   
+                     <!-- BREAKDOWN BUTTON -->               
+                  <div class="control">
+                     <button class="btn btn-outline-danger button">Calculate</button>
+                   </div>
+                   
+               </form>
+            </div>
+            <div class="col-6 flex-column align-items-center justify-content-center">
+               <h5 class="mt-2 mb-5 text-center">Calculated Results</h5>
+               <div class="box-color d-flex mb-4 ml-3">
+                  <p class="title">Monthly Payments:</p>
+                  <p id="monthlyPayment" class="title">&#8369;</p>
+                </div>
+                <div class="box-color mb-4 ml-3 d-flex">
+                  <p class="title">Total Interest:</p>
+                  <p id="totalInterest" class="title ml-4">&#8369;</p>
+                </div>
+                <div class="box-color mb-4 ml-3 d-flex">
+                  <p class="title">Less Dwonpayment:    </p>
+                  <p id="lessDownpayment" class="title">&#8369;</p>
+                </div>
+                <div class="box-color ml-3 mb-4 d-flex">
+                  <p class="title">Total Amount to pay: </p>
+                  <p id="totalPayment" class="title">&#8369;</p>
+                </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+<script src="assets/javascript/app.js"></script>
+</html>

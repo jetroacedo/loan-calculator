@@ -1,0 +1,41 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin-top:0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.container2 {
+    width: 100%;
+    max-width: 750px;
+    margin:0 auto;
+    background-color: white;
+    border: 5px solid #AF2024;
+    border-radius: 10px;
+}
+.col {
+    width: 100%;
+    padding: 25px;
+    border-right: 3px dotted #AF2024;
+}
+.form{
+    width: 100%;
+}
+.col-6{
+    width: calc(100% / 12 * 6);
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: antiquewhite;
+}
+.button,
+p{
+    font-size: 14px;
+}
+
+.title{
+    padding-left: 15px ;
+}
